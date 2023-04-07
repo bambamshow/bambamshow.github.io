@@ -1059,6 +1059,14 @@ header p {
   letter-spacing: 0.075em;
   margin-top: 2em;
   text-transform: uppercase; }
+  
+  header pbig {
+  font-family: "Roboto Slab", serif;
+  font-size: 3em;
+  font-weight: 800;
+  letter-spacing: 0.075em;
+  margin-top: 0em;
+  text-transform: uppercase; }
 
 header.major > :last-child {
   border-bottom: solid 3px #f2849e;
@@ -1406,7 +1414,7 @@ ul.actions {
 ul.icons {
   cursor: default;
   list-style: none;
-  padding-left: 0; }
+  padding-left: 3em; }
   ul.icons li {
     display: inline-block;
     padding: 0 1em 0 0; }
@@ -2016,7 +2024,7 @@ button,
     width: 18em; }
     #sidebar > .inner > * {
       margin: 0 0 1em 0;
-      padding: 2em 0 15em 0; }
+      padding: 5em 0 5em 0; }
       #sidebar > .inner > * > :last-child {
         margin-bottom: 0; }
       #sidebar > .inner > *:last-child {
@@ -2149,8 +2157,9 @@ button,
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
-  display: block;
-  padding: 6em 0 0 0;
+  display: flex;
+  padding: 6em 0 1em 0;
+   border-bottom: solid 5px #f2849e;
   position: relative; }
 
 #header {
@@ -2172,7 +2181,7 @@ button,
     border-bottom: 0;
     color: inherit;
     font-family: "Roboto Slab", serif;
-    font-size: 1.125em; }
+    font-size: 0.125em; }
   #header .icons {
     text-align: right; }
   @media screen and (max-width: 1680px) {
