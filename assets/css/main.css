@@ -72,7 +72,8 @@ body {
     min-width: 320px; } }
 
 html {
-  box-sizing: border-box; }
+  box-sizing: border-box; 
+  scroll-behavior: smooth !important;}
 
 *, *:before, *:after {
   box-sizing: inherit; }
@@ -1056,7 +1057,7 @@ header p {
   font-size: 1.5em;
   font-weight: 800;
   letter-spacing: 0.075em;
-  margin-top: 1em;
+  margin-top: 2em;
   text-transform: uppercase; }
 
 header.major > :last-child {
@@ -1329,7 +1330,7 @@ ol {
 
 ul {
   list-style: disc;
-  margin: 0 0 2em 0;
+  margin: 0 0 0 0;
   padding-left: 1em; }
   ul li {
     padding-left: 0.5em; }
@@ -2014,8 +2015,8 @@ button,
     position: relative;
     width: 18em; }
     #sidebar > .inner > * {
-      margin: 0 0 3.5em 0;
-      padding: 10em 0 3.5em 0; }
+      margin: 0 0 1em 0;
+      padding: 2em 0 15em 0; }
       #sidebar > .inner > * > :last-child {
         margin-bottom: 0; }
       #sidebar > .inner > *:last-child {
@@ -2144,14 +2145,23 @@ button,
         width: 5em; } }
 
 /* Header */
+#headerall {
+  display: -moz-flex;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: block;
+  padding: 6em 0 0 0;
+  position: relative; }
+
 #header {
   display: -moz-flex;
   display: -webkit-flex;
   display: -ms-flex;
-  display: flex;
+  display: block;
   border-bottom: solid 5px #f2849e;
-  padding: 6em 0 1em 0;
+  padding: 2em 0 2em 0;
   position: relative; }
+ 
   #header > * {
     -moz-flex: 1;
     -webkit-flex: 1;
@@ -2167,10 +2177,10 @@ button,
     text-align: right; }
   @media screen and (max-width: 1680px) {
     #header {
-      padding-top: 5em; } }
+      padding-top: 0em; } }
   @media screen and (max-width: 736px) {
     #header {
-      padding-top: 6.5em; }
+      padding-top: 0em; }
       #header .logo {
         font-size: 1.25em;
         margin: 0; }
@@ -2261,6 +2271,7 @@ button,
 
 /* Footer */
 #footer .copyright {
+	
   color: #9fa3a6;
   font-size: 0.9em; 
   font-family: "Roboto Slab", serif;}
@@ -2330,17 +2341,17 @@ button,
 
 #menu > ul > li {
 
-  margin: 0.5em 0 0 0;
+  margin: -0.5em 0 0 0;
   padding: 0.5em 0 0 0; }
   #menu > ul > li > ul {
     color: #9fa3a6;
     display: none;
-    margin: 0.5em 0 1.5em 0;
+    margin: 0.5em 0 0.5em 0;
     padding-left: 1em; }
     #menu > ul > li > ul a, #menu > ul > li > ul span {
       font-size: 0.8em; }
     #menu > ul > li > ul > li {
-      margin: 0.125em 0 0 0;
+      margin: -0.875em 0 0 0;
       padding: 0.125em 0 0 0; }
   #menu > ul > li:first-child {
     border-top: 0;
@@ -2484,7 +2495,7 @@ button,
 			}
 
 		* + .tiles {
-			margin-top: 0em;
+			margin-top: 3em;
 		}
 
 		body.is-preload .tiles article {
@@ -2503,7 +2514,7 @@ button,
 		@media screen and (max-width: 1280px) {
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: 1.75em 0 0 -1.25em;
 			}
 
 				.tiles article {
@@ -2516,7 +2527,7 @@ button,
 		@media screen and (max-width: 980px) {
 
 			.tiles {
-				margin: -2.5em 0 0 -2.5em;
+				margin: 0.5em 0 0 -2.5em;
 			}
 
 				.tiles article {
@@ -2529,7 +2540,7 @@ button,
 		@media screen and (max-width: 736px) {
 
 			.tiles {
-				margin: -1.25em 0 0 -1.25em;
+				margin: 1.75em 0 0 -1.25em;
 			}
 
 				.tiles article {
@@ -2549,7 +2560,7 @@ button,
 		@media screen and (max-width: 480px) {
 
 			.tiles {
-				margin: 0;
+				margin: 0.5em;
 			}
 
 				.tiles article {
