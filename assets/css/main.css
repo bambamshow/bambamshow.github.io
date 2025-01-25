@@ -2045,8 +2045,7 @@ button,
     position: relative;
     width: 18em; }
     #sidebar > .inner > * {
-      margin: 0 0 1em 0;
-      padding: 5em 0 2em 0; }
+      margin: 0 0 1em 0; }
       #sidebar > .inner > * > :last-child {
         margin-bottom: 0; }
       #sidebar > .inner > *:last-child {
